@@ -42,7 +42,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
-                    <li><a href="users">{{__("messages.Users")}}</a></li>
+                    <li><a href="/admin/users">{{__("messages.Users")}}</a></li>
                     @if (Auth::guest())
                             <li><a href="{{ route('login') }}">{{__("messages.Login")}}</a></li>
                             <li><a href="{{ route('register') }}">{{__("messages.Register")}}</a></li>
@@ -53,6 +53,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li>{!! link_to('admin/users/profile', __('messages.profile')) !!}</li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

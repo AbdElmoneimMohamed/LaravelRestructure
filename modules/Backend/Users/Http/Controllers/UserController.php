@@ -20,11 +20,15 @@ class UserController extends Controller
         return view('backend\users\index', ['users' => $users]);
 
     }
-    public function profile($id, UserModel $userModel)
+    public function show($id, UserModel $userModel)
     {
         $currentUser = $userModel->findUser($id);
-        return view('backend\users\profile', ['user' => $currentUser]);
+        return view('backend\users\show', ['user' => $currentUser]);
     }
 
-
+    public function profile()
+    {
+        $currentUser = Auth::user();
+        return view('backend\users\profile', ['user' => $currentUser]);
+    }
 }

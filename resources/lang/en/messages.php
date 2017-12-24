@@ -11,4 +11,6 @@ return [
     "Email" => "Email",
     "Role" => "Role",
     "Action" => "Action",
+    "profile" => "Profile",
+
 ];

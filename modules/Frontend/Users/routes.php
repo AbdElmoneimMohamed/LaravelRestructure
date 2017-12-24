@@ -1,4 +1,2 @@
 <?php
-Route::get('/khaled', function () {
-    return "khaled";
-});
+Route::get('users/profile', 'UserController@profile');

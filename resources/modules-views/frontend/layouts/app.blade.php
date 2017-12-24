@@ -52,6 +52,7 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    <li>{!! link_to('frontend/users/profile', __('messages.profile')) !!}</li>
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

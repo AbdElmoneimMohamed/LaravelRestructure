@@ -21,7 +21,7 @@
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
                             <td>{{$user->roles[0]->name}}</td>
-                            <td> {{Html::link("admin/users/$user->id/profile"  , 'profile') }}
+                            <td> {{Html::link("admin/users/$user->id", 'view') }}
                             </td>
                         </tr>
                        @endforeach

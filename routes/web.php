@@ -20,11 +20,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 // change the locale
 // using local Middleware
 Route::get('/lang/{locale}', function ($locale) {
