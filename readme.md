@@ -34,7 +34,7 @@ i configured this project to support two languages
  ## Views
  
  you will find them in app/resources/modules-views directory
- i divided them to to directory 
+ i divided them to two directory 
  
  * backend
  * frontend
@@ -56,12 +56,12 @@ i configured this project to support two languages
  * create homestead database  
  * git clone https://github.com/AbdElmoneimMohamed/LaravelRestructure.git
  * php artisan migrate:refresh --seed
- *  you can login with role admin with 
+ *  you can login with admin role with 
  
  username : admin@admin.com
  password : adminadmin
  
- *  you can login with user admin with 
+ *  you can login with user role with 
   
   username : user@user.com
   password : useruser
