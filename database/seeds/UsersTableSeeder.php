@@ -21,6 +21,12 @@ class UsersTableSeeder extends Seeder
 
         App\Entities\User::find(1)->roles()->save($adminRole);
 
+        factory(App\Entities\User::class, 1)->create([
+            "email"=>"user@user.com",
+            "password" => bcrypt("useruser")
+        ]);
+        App\Entities\User::find(2)->roles()->save($userRole);
+
         factory(App\Entities\User::class, 10)
             ->create(["password" => bcrypt("123456")])
             ->each(function ($u) use ($userRole) {
